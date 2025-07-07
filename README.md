@@ -28,11 +28,11 @@ Este repositorio contiene enlaces directos a los dos subproyectos:
 
 ### 🐳: ejecutar todo con Docker 
 
-> Asegúrate de tener [Docker](https://docs.docker.com/get-docker/) instalado.
+> Debe de tener [Docker](https://docs.docker.com/get-docker/) instalado.
 
 > Desde la raíz del repositorio clonado (`sistema-registro-escolar-mid/`), ejecuta:
 
-> si maneja linux en bash remplazar ```start``` con ```xdg-open``` en el bash
+> si maneja linux remplazar ```start``` con ```xdg-open``` en el bash
 
 ```bash
 docker-compose up --build -d && start http://localhost:4200/
