@@ -24,31 +24,15 @@ Este repositorio contiene enlaces directos a los dos subproyectos:
 
 ---
 
-## ⚙️ Cómo ejecutar el proyecto
+## ⚙️ ¿Cómo ejecutar el proyecto?
 
-### 🐳 Opción 1: Levantar todo con Docker
+### 🐳: ejecutar todo Docker 
 
-> Asegúrate de tener Docker instalado en tu máquina.
+> Asegúrate de tener [Docker](https://docs.docker.com/get-docker/) instalado.
+
+Desde la raíz del repositorio clonado (`sistema-registro-escolar-mid/`), ejecuta:
+
+si maneja linux en bash remplazar ```start``` con ```xdg-open``` en el bash
 
 ```bash
-# Clona el repositorio backend
-git clone https://github.com/DarcherDev/sre-backend.git
-cd sre-backend
-
-# Levanta los servicios
-docker-compose up --build -d
-
-# Clona el repositorio frontend
-cd..
-git clone https://github.com/DarcherDev/sre-frontend.git
-cd sre-frontend
-
-# Instala Angular CLI (si no lo tienes)
-npm install -g @angular/cli@16
-
-# Instala dependencias
-npm install
-
-# Corre la aplicación
-npm start   # o bien: ng serve -o
-
+docker-compose up --build -d && start http://localhost:4200/
